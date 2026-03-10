@@ -1,0 +1,6 @@
+title: Davis McCoy
+description: Writing and notes
+url: https://dcmc.github.io
+baseurl: /blog
+permalink: /:title/
+markdown: kramdown
