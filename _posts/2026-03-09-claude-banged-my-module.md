@@ -75,3 +75,7 @@ So a write sequence looks like:
 The ixgbe kernel driver initializes the 82599 during PCI probe (powers on the PHY, sets up the MAC, etc.), which also powers the SFP cage's I2C bus. Once that's done, the I2C lines are live. We're not going through the driver's I2C abstraction or the kernel's i2c-dev subsystem — we're writing directly to hardware registers through the memory-mapped PCI BAR. The kernel doesn't know or care.
 
 The tradeoff is that there's no bus arbitration. If the kernel driver tried to read the SFP at the same time we're mid-transaction, the bus would get corrupted. In practice this isn't an issue because the driver only polls SFP state infrequently and our bit-bang transactions are fast.
+
+---
+
+[Code on GitHub](https://github.com/dcmc/x520-sfp-flash)
