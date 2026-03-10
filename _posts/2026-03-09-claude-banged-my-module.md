@@ -25,7 +25,7 @@ Out of pure ignorance, I ask Claude if it can re write the EEPROM using the netw
 
 A few prompts and scripts later, I've got my Finisar modules flashed to report themselves as Ethernet modules, and my pile of RJ45 SFPs are flashed back to factory so they negotiate properly with my CCR2004.
 
-See below for Claude's explanation of how this was done. This is something I NEVER would have been able to do myself, and the span of an hour or so I had a solution that was free and honestly worked way better than any of the commercial module programmers.
+See below for Claude's explanation of how this was done. This is something I NEVER would have been able to do myself, and in the span of an hour or so I had a solution that was free and honestly worked way better than any of the commercial module programmers.
 
 ## How SFP EEPROM Writing Works Through the 82599's BAR0
 
